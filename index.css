@@ -1,0 +1,139 @@
+.p_img{
+    vertical-align: middle;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    padding:60px;
+}
+.container1{
+    position:relative;
+    justify-content:baseline;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    font-size: 20px;
+    
+    
+}
+
+.content{
+    flex-direction: column;
+
+}
+.search{
+    text-align: center;
+    font-size:30px
+}
+
+button:hover{
+    background-color: aquamarine;
+    
+}
+input[type=text]:focus,textarea[id=subject]:focus{
+    background-color:lightseagreen;
+    outline: none;
+    
+ }
+ .link{
+    font-size: 20px;
+    padding:30px;
+
+ }
+ 
+ 
+
+body{
+    background-image: linear-gradient(to top right,
+        #CC64A2, #753073
+    );
+    min-height: 100vh;
+    line-height: 20px;
+    font-family: monospace;
+}
+.container{
+    width:1200px;
+    margin:150px auto 0;
+}
+.list{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    column-gap: 20px;
+   
+}
+.item .img img{
+    height:160px;
+    transition: 0.5s;
+    border-radius: 50%;
+}
+.item .img{
+    background-image: linear-gradient(to top right,
+        #D89CD1, #D499D4
+    );
+    padding:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+.item .content{
+    background-color: #ffffff24;
+    border-radius: 30px;
+    padding:50px 30px;
+    transform: translate(0,-50px);
+    backdrop-filter: blur(20px);
+    color:#fff;
+}
+.title{
+    
+    text-decoration: none;
+    background-color:#D499D4;
+    font-size: 15px;
+    padding:10px;
+    color:#fff;
+    width:40%;
+    border:none;
+    border-radius: 55px;
+    margin-top: 20px; 
+    text-align: center;
+    
+}
+.item .content .des{
+    opacity: .7;
+    margin:10px 0;
+    font-size: 16px;
+}
+.title:hover{
+    background-color: aquamarine;
+    
+}
+
+.item .content .add{
+    background-color: #B192EF;
+    padding:10px;
+    color:#fff;
+    width:40%;
+    border:none;
+    border-radius: 55px;
+    margin-top: 20px; 
+    text-align: center;
+}
+
+.item:hover img{
+    transform: translate(0,-50px);
+}
+.listPage{
+    padding:10px;
+    text-align: center;
+    list-style: none;
+}
+.listPage li{
+    background-color: #ffffffBD;
+    padding:20px;
+    display: inline-block;
+    margin:0 10px;
+    cursor: pointer;
+}
+.listPage .active{
+    background-color: #B192EF;
+    color:#fff;
+}
